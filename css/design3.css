@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #42b766;
+  color: white;
+  padding: 20px;
+}
+.py {
+  padding: 0.5rem 0;
+}
+.fa-circle,
+.fas {
+  padding-right: 10px;
+}
+.icons-right {
+  float: right;
+}
+h1 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 300;
+}
+.container {
+  padding: 1rem;
+}
+
+#search {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 8px 0 8px 0;
+}
+::placeholder {
+  padding-left: 10px;
+  color: gray;
+}
+
+.profile-img {
+  float: left;
+  padding-right: 5%;
+}
+.name {
+  font-weight: 700;
+  font-size: 14px;
+}
+.msg {
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 0.6;
+}
+hr {
+  color: #ededed;
+  border-width: 0.1px;
+  opacity: 0.2;
+  width: 85%;
+  margin-left: 19%;
+}
+@media (min-width: 768px) {
+  hr {
+    width: 92.5%;
+    margin-left: 8%;
+  }
+}
+.color-1 {
+  color: blue;
+}
+.color-2 {
+  color: rgb(88, 4, 4);
+}
+.color-3 {
+  color: rgb(20, 166, 202);
+}
+.color-4 {
+  color: tomato;
+}
+.color-5 {
+  color: thistle;
+}
