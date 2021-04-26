@@ -1,5 +1,5 @@
 :root {
-  --light-blue: rgb(109, 221, 236);
+  --light-blue: #51cbee;
 }
 
 body {
@@ -23,8 +23,7 @@ main {
   color: var(--light-blue);
 }
 .subtitle {
-  color: gray;
-  opacity: 0.5;
+  color: #d4d5dc;
 }
 
 @media (min-width: 768px) {
@@ -39,7 +38,7 @@ main {
   }
 }
 .highlight {
-  background-color: var(--light-blue);
+  background-color: #50cbed;
   padding: 2px;
 }
 .button {
