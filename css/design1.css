@@ -1,0 +1,54 @@
+:root {
+  --light-blue: rgb(109, 221, 236);
+}
+
+body {
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  border: 2px solid var(--light-blue);
+  border-radius: 10px;
+  padding: 20px 20px 0 20px;
+}
+.title {
+  color: var(--light-blue);
+}
+.subtitle {
+  color: gray;
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  main {
+    height: 100vh;
+  }
+  body {
+    overflow: hidden;
+  }
+  .content {
+    margin: auto 25% auto 25% !important;
+  }
+}
+.highlight {
+  background-color: var(--light-blue);
+  padding: 2px;
+}
+.button {
+  background-color: var(--light-blue);
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  float: right;
+  font-size: 18px;
+  border-radius: 5px;
+}
