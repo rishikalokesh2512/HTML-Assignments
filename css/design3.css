@@ -5,11 +5,20 @@ body {
 }
 header {
   background-color: #42b766;
+  opacity: 1;
+  z-index: 1;
   color: white;
-  padding: 20px;
+  padding: 20px 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .py {
   padding: 0.5rem 0;
+}
+.fa-circle {
+  padding-left: 25px;
 }
 .fa-circle,
 .fas {
@@ -46,13 +55,13 @@ h1 {
   font-size: 14px;
 }
 .msg {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 12px;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 hr {
-  color: #ededed;
-  border-width: 0.1px;
+  color: #aaaaaa;
+  border-width: 0.05px;
   opacity: 0.2;
   width: 85%;
   margin-left: 19%;
