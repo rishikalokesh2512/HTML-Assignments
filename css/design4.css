@@ -8,7 +8,7 @@ header {
 }
 .text-gray {
   color: gray;
-  opacity: 0.8;
+  opacity: 0.5;
   font-size: 12px;
 }
 .change {
@@ -27,19 +27,9 @@ header {
   width: 100%;
   height: auto;
 }
-.icon-title {
-  color: gray;
-  text-align: center;
-  opacity: 0.5;
-}
-.icons {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-top: 1rem;
-}
+
 .fa-tags {
-  color: lawngreen;
+  color: green;
 }
 .fa-star {
   color: orange;
@@ -60,7 +50,6 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
-  color: gray;
   z-index: 1;
   padding: 15px 0 15px 0;
   background-color: white;
@@ -72,14 +61,13 @@ footer {
   background-color: white;
   position: fixed;
   width: 100%;
-  bottom: 0;
-  margin: 0;
+  bottom: 0px;
 }
 .row {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
-  position: relative;
+  padding-bottom: 50px;
 }
 .title {
   opacity: 1;
@@ -104,4 +92,35 @@ footer {
   margin-right: 12px;
   background-color: #eee;
   font-size: 12px;
+}
+.badge-col .fa-star {
+  padding-right: 5px;
+}
+.text-green {
+  color: green;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+a:hover,
+a:active,
+.active {
+  color: orange;
+}
+.icons-container {
+  padding: 5px 5px 0 5px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.box {
+  margin: 15px 8px 0px 8px;
+  display: inline-block;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+}
+.recommendations h3 {
+  margin-top: 0;
 }
