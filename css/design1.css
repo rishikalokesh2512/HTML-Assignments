@@ -1,13 +1,5 @@
-:root {
-  --light-blue: #51cbee;
-}
+/*
 
-body {
-  line-height: 1.5rem;
-  font-weight: 500;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
 main {
   display: flex;
   flex-direction: column;
@@ -19,12 +11,7 @@ main {
   border-radius: 10px;
   padding: 20px 20px 0 20px;
 }
-.title {
-  color: var(--light-blue);
-}
-.subtitle {
-  color: #d4d5dc;
-}
+
 
 @media (min-width: 768px) {
   main {
@@ -37,17 +24,37 @@ main {
     margin: auto 25% auto 25% !important;
   }
 }
-.highlight {
-  background-color: #50cbed;
-  padding: 2px;
+
+ */
+
+/* Bootstrap Implementation */
+
+:root {
+  --light-blue: #51cbee;
 }
-.button {
-  background-color: var(--light-blue);
-  padding: 15px;
-  border: none;
-  font-weight: bold;
-  color: white;
-  float: right;
+
+body {
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+.title {
+  color: var(--light-blue);
+}
+.subtitle {
+  color: #d4d5dc;
+}
+.col-content {
+  border: 2px solid var(--light-blue);
+  border-radius: 10px;
+}
+.btn {
+  background-color: var(--light-blue) !important;
   font-size: 18px;
   border-radius: 5px;
+}
+.highlight {
+  background-color: #50cbed;
 }

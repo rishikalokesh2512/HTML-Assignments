@@ -1,4 +1,4 @@
-body {
+/* body {
   line-height: 1.5rem;
   font-weight: 500;
   font-size: 16px;
@@ -81,4 +81,45 @@ ul li {
 .footer-img {
   color: #e00f7a;
   float: right;
+} */
+
+/*Bootstrap CSS */
+body {
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #50e2c1 !important;
+  height: 100vh;
+}
+.container {
+  background-color: white;
+  background-color: #50e2c1 !important;
+}
+.content {
+  background-color: white;
+}
+#box-1 {
+  background-color: #e00f7a;
+  height: 100px;
+}
+
+#box-2 {
+  background-color: #2f07d6;
+  height: 100px;
+}
+.footer-img {
+  color: #e00f7a;
+}
+.text-gray {
+  color: grey;
+}
+.font-1 {
+  font-family: "Roboto", sans-serif;
+}
+.font-2 {
+  font-family: Helvetica, sans-serif;
+}
+.designation {
+  opacity: 0.5;
 }
