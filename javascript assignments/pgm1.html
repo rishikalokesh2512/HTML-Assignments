@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>Calculate age of a person</title>
+
+<head>
+    <script>
+        function DOB() {
+            var dob1 = prompt("Enter dob in format-mm/dd/yyyy");
+            document.write("Birthday entered is: " + dob1);
+            document.write("<br>");
+            var dob = new Date(dob1);
+            var bday = dob.getDate();
+            var bmo = dob.getMonth();
+            var byr = dob.getFullYear();
+            var now = new Date();
+            tday = now.getDate();
+            tmo = (now.getMonth());
+            tyr = (now.getFullYear());
+            {
+                if ((tmo > bmo) || (tmo == bmo & tday >= bday)) { age = byr }
+                else { age = byr + 1 }
+                document.write("Age of the person is: " + (tyr - age) + " years");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Take date of birth from user as input and show there age on click of a button.</h1>
+    <button onclick="DOB()">Enter Date</button>
+</body>
+
+</html>

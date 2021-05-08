@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>Vowels </title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<head>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <h3 class="text-center sticky-top">Take name from use user and on click of submit, display how many vowels are
+        present in text and how name will look without vowels.</h3>
+    <div class="py-5  d-flex justify-content-center text-center">
+        <div>
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" />
+            <br>
+            <button class="btn btn-success mr-2 my-5" onclick="countVowel()">Submit</button>
+        </div>
+        <p id="display" class="text-center text-danger"></p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function countVowel() {
+            var str = document.getElementById('name').value;
+
+            // find the count of vowels
+            const count = str.match(/[aeiou]/gi).length;
+            // return number of vowels
+            
+             var str1 = str.replace( /[aeiou]/g, '' ); 
+             document.getElementById('display').innerHTML = 'No. of vowels: ' + count + "<br> And the string without vowels is: "+str1;
+        }
+
+    </script>
+</body>
+
+</html>
